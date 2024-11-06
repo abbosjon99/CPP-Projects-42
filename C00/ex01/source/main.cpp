@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akeldiya <akeldiya@student.42.fr>          +#+  +:+       +#+        */
+/*   By: akeldiya <akeldiya@student.42warsaw.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 20:26:38 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/10/28 21:04:20 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/10/29 09:46:58 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,9 @@ int	main(void)
 	{
 		std::cout << "Please enter a command:" << std::endl;
 		std::cin >> str;
+		if (str == "SEARCH")
+			std::cout << "No contacts added yet!" << std::endl;
+		else if (str == "ADD")
+			std::cout << "No models created yet!" << std::endl;
 	}
 }
