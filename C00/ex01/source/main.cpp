@@ -3,39 +3,36 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akeldiya <akeldiya@student.42.fr>          +#+  +:+       +#+        */
+/*   By: akeldiya <akeldiya@student.42warsaw.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 20:26:38 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/11/07 00:56:08 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/11/08 20:18:54 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Contact.hpp"
+#include "../include/PhoneBook.hpp"
 #include <iostream>
 
 int	main(void)
 {
-	Contact	person;
+	PhoneBook	pb;
 
 	std::string str;
+	pb.init();
 	std::cout << "Welcome to 80's PhoneBook" << std::endl;
 	while (str != "EXIT")
 	{
 		std::cout << "Please enter a command:" << std::endl;
 		std::cin >> str;
 		if (str == "ADD")
+			pb.addContact();
+		else if (str == "SEARCH")
+			pb.searchContact();
+		else if (str != "EXIT")
 		{
-			std::cout << "Please enter the first name:" << std::endl;
-			std::cin >> str;
-			person.setFirstName(str);
-			std::cout << "Please enter the last name:" << std::endl;
-			std::cin >> str;
-			person.setLastName(str);
-		}
-		else if (str != "ADD")
-		{
-			std::cout << person.getFirstName() << std::endl;
-			std::cout << person.getLastName() << std::endl;
+			std::cout << "List of valid commands:" << std::endl;
+			std::cout << "ADD | SEARCH | EXIT" << std::endl;
 		}
 	}
 }

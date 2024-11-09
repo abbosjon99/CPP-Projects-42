@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akeldiya <akeldiya@student.42.fr>          +#+  +:+       +#+        */
+/*   By: akeldiya <akeldiya@student.42warsaw.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 20:52:41 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/11/07 00:57:36 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/11/08 08:40:07 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Contact.hpp"
-#include <iostream>
 
 std::string Contact::getFirstName(void)
 {
