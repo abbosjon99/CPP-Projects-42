@@ -6,7 +6,7 @@
 /*   By: akeldiya <akeldiya@student.42warsaw.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 20:26:38 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/11/08 20:18:54 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:39:55 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	main(void)
 	PhoneBook	pb;
 
 	std::string str;
-	pb.init();
 	std::cout << "Welcome to 80's PhoneBook" << std::endl;
 	while (str != "EXIT")
 	{

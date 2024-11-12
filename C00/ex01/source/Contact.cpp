@@ -6,7 +6,7 @@
 /*   By: akeldiya <akeldiya@student.42warsaw.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 20:52:41 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/11/08 08:40:07 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:44:54 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,23 @@
 
 std::string Contact::getFirstName(void)
 {
-	std::string str;
-	str = first_name;
-	return (str);
+	return (first_name);
 }
 std::string Contact::getLastName(void)
 {
-	std::string str;
-	str = last_name;
-	return (str);
+	return (last_name);
 }
 std::string Contact::getNickName(void)
 {
-	std::string str;
-	str = nick_name;
-	return (str);
+	return (nick_name);
 }
 std::string Contact::getSecret(void)
 {
-	std::string str;
-	str = secret;
-	return (str);
+	return (secret);
 }
 std::string Contact::getPhoneNumber(void)
 {
-	std::string str;
-	str = phone_number;
-	return (str);
+	return (phone_number);
 }
 
 void Contact::setFirstName(std::string str)
